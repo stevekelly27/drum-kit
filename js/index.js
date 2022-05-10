@@ -77,6 +77,105 @@ function playSnare2(event) {
     var audio15 = new Audio('sounds/snare2.mp3');
     audio15.play();
 }
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === '4') {
+        playTriangle(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === '5') {
+        playClosedHIhat(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === '6') {
+        playOpenHihat(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === '7') {
+        playSymbal(event);
+    }
+})
+
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'r') {
+        playBell(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 't') {
+        playClang(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'y') {
+        playClap(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'u') {
+        playCrash(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'f') {
+        playTom2(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'g') {
+        playKick1(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'h') {
+        playTom1(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'j') {
+        playBomb(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'v') {
+        playKick3(event);
+    }
+})
+
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'b') {
+        playSnare(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'n') {
+        playKick2(event);
+    }
+})
+
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'm') {
+        playSnare2(event);
+    }
+})
+
 // const sounds = {
 //     'pad1' : 'sounds/triangle.mp3',
 //     'pad2' : 'sounds/closed-hihat.mp3',
@@ -106,6 +205,11 @@ function playSnare2(event) {
 // for (let pad of pads) {
 //     pad.addEventListener('click', playSound)
 //   }
+
+
+
+
+
 
 // function playSound(event) {
 
@@ -139,3 +243,17 @@ function playSnare2(event) {
 // };
 
 
+
+
+
+
+
+
+// $(document).ready(function() {
+
+//     var padOne = new Audio('sounds/triangle.mp3');
+//     $('.pad1').mousedown(function() {
+//       padOne.load()
+//       padOne.play();
+//     });
+// });       
