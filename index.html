@@ -11,27 +11,28 @@
     <title>Drum-kit</title>
 </head>
 <body>
+    
     <h1>Virtual expierence of AKAI Drum Pads</h1>
-    <div class="drum-pads">
-        <div class="pads pad1" onclick="playTriangle();" data-pad="88">4</div>
-        <div class="pads pad2" data-pad="69">5</div>
-        <div class="pads pad3" data-pad="75">6</div>
-        <div class="pads pad4" data-pad="73">7</div>
+    <div class="drum-pads"> 
+        <div class="pads pad1" onclick = "playTriangle(event);" >4</div>
+        <div class="pads pad2" onclick = "playClosedHIhat(event);">5</div>
+        <div class="pads pad3" onclick = "playOpenHihat(event);">6</div>
+        <div class="pads pad4" onclick = "playSymbal(event);">7</div>
 
-        <div class="pads pad5" data-pad="82">R</div>
-        <div class="pads pad6" data-pad="84">T</div>
-        <div class="pads pad7" onclick="play();" data-pad="89">Y</div>
-        <div class="pads pad8" data-pad="85">U</div>
+        <div class="pads pad5" onclick = "playBell(event);" >R</div>
+        <div class="pads pad6" onclick = "playClang(event);" >T</div>
+        <div class="pads pad7" onclick = "playClap(event);" >Y </div>
+        <div class="pads pad8" onclick = "playCrash(event);" >U</div>
      
-        <div class="pads pad9" data-pad="70">F</div>
-        <div class="pads pad10" data-pad="71">G</div>
-        <div class="pads pad11" data-pad="72">H</div>
-        <div class="pads pad12" data-pad="74">J</div>
+        <div class="pads pad9" onclick = "playTom2(event);">F</div>
+        <div class="pads pad10" onclick = "playKick1(event);">G</div>
+        <div class="pads pad11" onclick = "playTom1(event);">H</div>
+        <div class="pads pad12" onclick = "playBomb(event);">J</div>
 
-        <div class="pads pad13" data-pad="86">V</div>
-        <div class="pads pad14" data-pad="66">B</div>
-        <div class="pads pad15" data-pad="78">N</div>
-        <div class="pads pad16" onclick="play();" data-pad="77">M</div>
+        <div class="pads pad13" onclick = "playKick3(event);">V</div>
+        <div class="pads pad14" onclick = "playSnare(event);">B</div>
+        <div class="pads pad15" onclick = "playKick2(event);">N</div>
+        <div class="pads pad16" onclick = "playSnare2(event);">M</div>
     </div>
 
     <script src="js/index.js"></script>
