@@ -6,7 +6,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 h1 {
@@ -15,6 +15,21 @@ h1 {
     padding-bottom: 100px;
     font-family: 'Orbitron', sans-serif;
 }
+
+label {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+#volumeslider {
+  width: 200px;
+  height: 50px;
+  cursor: pointer;
+  border: none;
+}
+
 
 .drum-pads {
     width: 600px;
@@ -48,3 +63,4 @@ h1 {
     transform: scale(1.1);
     transition: all .1s;
   }
+

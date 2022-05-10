@@ -176,6 +176,28 @@ window.addEventListener('keydown', (event) => {
     }
 })
 
+// let volume = document.querySelector("#volumeslider");
+// volume.addEventListener("change", function(e) {
+// audio.volume = e.currentTarget.value / 100;
+// })
+
+
+
+var audio = document.getElementsByClassName('drum-pads');
+var volumeSlider = document.getElementsByClassName('volumeslider');
+
+window.setInterval(changevolume(), 1);
+
+function changevolume() {
+
+ var x = volumeSlider.value;
+ var y = x / 100;
+
+ audio.volume = y;
+
+}
+
+
 // const sounds = {
 //     'pad1' : 'sounds/triangle.mp3',
 //     'pad2' : 'sounds/closed-hihat.mp3',
@@ -198,7 +220,6 @@ window.addEventListener('keydown', (event) => {
 //     'pad16' : 'sounds/snare2.mp3',
 // }
 
-// const Drumpads = document.getElementsByClassName('drum-pads');
 
 // const pads = document.querySelectorAll('.pads');
 
@@ -235,16 +256,22 @@ window.addEventListener('keydown', (event) => {
 //         'pad16' : 'sounds/snare2.mp3',
 //     }
 
+//     for (let pad of pads){
+
 //     let clickedPad = event.target;
 
 //     let audio = new Audio(sounds['pad[i]'])
 
 //     audio.play;
+// }
 // };
 
 
 
 
+
+// let beat = document.getElemenstByClassName("drum-pads");
+//  start.addEventListener("click", PlaySound);
 
 
 
