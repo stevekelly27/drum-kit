@@ -16,25 +16,18 @@
     <label for="volumeslider">Volume</label>
     <input id="volumeslider" type="range" min="0" max="100" value="70" step="1">
     <div class="drum-pads"> 
-        <div class="pads pad1" onclick = "playTriangle(event);">4</div>
-        <div class="pads pad2" onclick = "playClosedHIhat(event);">5</div>
-        <div class="pads pad3" onclick = "playOpenHihat(event);">6</div>
-        <div class="pads pad4" onclick = "playSymbal(event);">7</div>
-
-        <div class="pads pad5" onclick = "playBell(event);" >R</div>
-        <div class="pads pad6" onclick = "playClang(event);" >T</div>
-        <div class="pads pad7" onclick = "playClap(event);" >Y </div>
-        <div class="pads pad8" onclick = "playCrash(event);" >U</div>
+        <div class="pads" id="triangle" data-url='sounds/triangle.mp3'>r</div>
+        <div class="pads" id="closed-hihat" data-url='sounds/closed-hihat.mp3'>t</div>
+        <div class="pads" id="open-hihat" data-url='sounds/open-hihat.mp3'>y</div>
+       
+    
+        <div class="pads" id="tom1" data-url='sounds/tom1.mp3'>f</div>
+        <div class="pads" id="cclap" data-url='sounds/cclap.mp3'>g</div>
+        <div class="pads" id="crash" data-url='sounds/crash.mp3'>h</div>
      
-        <div class="pads pad9" onclick = "playTom2(event);">F</div>
-        <div class="pads pad10" onclick = "playKick1(event);">G</div>
-        <div class="pads pad11" onclick = "playTom1(event);">H</div>
-        <div class="pads pad12" onclick = "playBomb(event);">J</div>
-
-        <div class="pads pad13" onclick = "playKick3(event);">V</div>
-        <div class="pads pad14" onclick = "playSnare(event);">B</div>
-        <div class="pads pad15" onclick = "playKick2(event);">N</div>
-        <div class="pads pad16" onclick = "playSnare2(event);">M</div>
+        <div class="pads" id="kick3" data-url='sounds/kick3.mp3'>v</div>
+        <div class="pads" id="snare2" data-url='sounds/snare2.mp3'>b</div>
+        <div class="pads" id="bomb-blast" data-url='sounds/bomb-blast.wav'>n</div>
     </div>
 
     <script src="js/index.js"></script>

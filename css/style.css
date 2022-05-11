@@ -4,6 +4,7 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
+    column-count: 3;
     justify-content: center;
     align-items: center;
     overflow: scroll;
@@ -32,7 +33,7 @@ label {
 
 
 .drum-pads {
-    width: 600px;
+    width: 500px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
