@@ -17,6 +17,16 @@ h1 {
     font-family: 'Orbitron', sans-serif;
 }
 
+
+.html-list {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  
+}
+
+
+
 label {
   font-family: 'Orbitron', sans-serif;
   font-size: 20px;
@@ -74,7 +84,14 @@ label {
       width: 80px;
       height: 80px;
       margin: 20px 10px;
-      
+      background-color: #555;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 20px;
+      color: rgb(208, 201, 201);
+      user-select: none;
+      border: 5px solid #a411119e;
     }
 
     .drum-pads {
@@ -85,4 +102,13 @@ label {
       font-family: 'Bangers', cursive;
     }
     
+    .pads:hover {
+      border: 5px solid #cb12129e;
+    }
+  
+    .pads:active {
+      transform: scale(1.1);
+      transition: all .1s;
+    }
+  
   }
