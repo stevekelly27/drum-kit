@@ -53,7 +53,6 @@ label {
     user-select: none;
     border: 5px solid #a411119e;
   }
-
   
   .pads:hover {
     border: 5px solid #cb12129e;
@@ -65,3 +64,25 @@ label {
     transition: all .1s;
   }
 
+  .active {
+    transform: scale(1.1);
+    transition: all .1s;
+  }
+
+  @media screen and (max-width: 600px) {
+    .pads {
+      width: 80px;
+      height: 80px;
+      margin: 20px 10px;
+      
+    }
+
+    .drum-pads {
+      width: 350px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      font-family: 'Bangers', cursive;
+    }
+    
+  }
