@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Play Drum Pads!">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,26 +13,29 @@
     <title>Drum-kit</title>
 </head>
 <body>
-    
-    <h1>Virtual expierence of Drum Pads</h1>
-    <p class='html-list'>This is a virtual drum-pad that is activated when a pad is clicked on or if you use the corrisponding keys below.</p>
-    <br>
-    <p class='html-list'>From the first pad on top from left to right:</p>
-    <ul class='html-list'>
+    <div id = 'header'>
+    <h1>Virtual Expierence of Drum Pads</h1>
+    </div>
+    <p class='brief'>This is a virtual drum-pad that is activated when a pad is clicked on or if you use the corrisponding keys below.</p>
+    <p id='list-header'>Order from first pad on top-left to right:</p>
+    <div id="instructions">
+    <ul class='list'>
         <li>r = Triangle</li>
         <li>t = Closed-Hihat</li>
         <li>y = Open Hihat</li>
-        <br>
+        
         <li>f = Tom</li>
         <li>g = Clap</li>
         <li>h = Crash</li>
-        <br>
+        
         <li>v = Kick</li>
         <li>b = Snare</li>
         <li>n = Bomb Blast</li>
     </ul>
+    </div>
+    <br>
     <label for="volumeslider">Volume</label>
-    <input id="volumeslider" type="range" min="0" max="100" value="70" step="1">
+    <input id="volumeslider" type="range" min="0" max="100" value="70" step="1" oninput="thisVolume(dataset.value)" onchange="thisVolume(dataset.value)">
     <div class="drum-pads"> 
 
         <div class="pads" id="triangle" data-url='sounds/triangle.mp3'>r</div>
