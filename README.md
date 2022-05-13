@@ -32,17 +32,21 @@ The drumpads have a transform, a transition and a hover effect in use with the c
 
 ![drumpad r being triggered](/images/drumpad.jpeg)
 
-## Testting 
+## Testing 
 
 Throughout the development I have been continuosly testing in an iPhonr 12, a Macbook pro 13" and on a larger monitor.
 I have tested on different browsers to insure there are no issues on any and was pleased to find out there was not.
 i have tested on:
-- Google chrome
+
+-Google chrome
+
 -Safari
+
 -Mozilla firefox
+
 -Duck Duck Go
 
-### responsive design
+### Responsive design
 The game has been designed using grids and flex boxes to ensure it translates well to any screen size. A few media queries have been added to accomidate for small screens. In the media query I made the Pads a bit smaller and the header a bit bigger.
 
 
@@ -73,7 +77,7 @@ I plan on fixing this and making it a feature in the future.
 
 ## Deployment
 
--The website is deployed to GitHub pages. To deploy you must:
+The website is deployed to GitHub pages. To deploy you must:
 
 -In the GitHub repository, go to the settings tab on the top right of screen.
 
@@ -81,7 +85,7 @@ I plan on fixing this and making it a feature in the future.
 
 -Once the Master Branch is selected, the page will provide the link to the website.
 
-The live link can be found here - [Link to the site](https://stevekelly27.github.io/drum-kit/)
+-The live link can be found here - [Link to the site](https://stevekelly27.github.io/drum-kit/)
 
 ## Credits 
 
